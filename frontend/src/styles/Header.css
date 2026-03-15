@@ -1,0 +1,64 @@
+/* ── Header Band ── */
+.header {
+  background: var(--blue);
+  color: #fff;
+  padding: 48px 56px 40px;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.header .job-title {
+  font-size: 1.05rem;
+  font-weight: 300;
+  opacity: 0.88;
+  margin-bottom: 22px;
+}
+
+/* ── Contact Row ── */
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  font-size: 0.88rem;
+}
+
+.contact-row a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s ease;
+}
+
+.contact-row a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.contact-row .icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .header {
+    padding: 32px 24px 28px;
+  }
+
+  .header h1 {
+    font-size: 1.7rem;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
